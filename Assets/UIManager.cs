@@ -5,15 +5,15 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    public TextMeshProUGUI txtSaludo;
-    public TMP_InputField inputNombre;
-    string nombreIngresado;
-    string saludo;
+    public TextMeshProUGUI txtContraseña;
+    public TMP_InputField inputClave;
+    string contraseñaIngresada;
+    string clave;
 
     // Start is called before the first frame update
     void Start()
     {
-        txtSaludo.text = "";
+        txtContraseña.text = "";
     }
 
     // Update is called once per frame
@@ -26,14 +26,14 @@ public class UIManager : MonoBehaviour
     {
         //obtener el nombre del inputfield
 
-        nombreIngresado = inputNombre.text;
+        contraseñaIngresada = inputClave.text;
 
         //concatenar el nombre con un saludo
 
-        saludo = "Hola " + nombreIngresado + "!";
+        clave = "Hola " + contraseñaIngresada + "!";
 
         //mostrar el saludo en txtSaludo
 
-        txtSaludo.text = saludo;
+        txtContraseña.text = clave;
     }
 }
